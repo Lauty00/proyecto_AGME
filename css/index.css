@@ -1,0 +1,495 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: font-all;
+
+}
+
+
+/*inicio global */
+main{
+    min-height: 700px;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid gray;
+}
+
+@font-face {
+    font-family:"subtitle";
+    src: url("../fonts/Poppins.ttf");
+}
+@font-face {
+    font-family:"font-all";
+    src: url("../fonts/OpenSans-Light.ttf");
+}
+
+h1 , h2,h3{
+    font-family: subtitle;
+}
+
+  
+
+.width-center{
+    width: 80%;
+    margin: auto;
+}
+
+
+.btn{
+    display: block;
+    margin-top: 50px;
+}
+
+.btn a{
+    background-color: #2589BD;
+    padding: 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+}
+.btn a:hover{
+    background-color:#328cbd ;
+    box-shadow:0px 0px 5px 2px #1584bf  ;
+}
+/*fin global */
+
+
+/*inicio header */
+header{
+    background-color: #CBE6F5;
+}
+
+#header-logo p{
+    float: right;
+    line-height: 135px;
+    margin-right: 20%;
+    font-size: 21px;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 20px 10px 20px 10px;
+}
+
+nav{
+    background-color: #8EC5D6;
+    height: 40px;
+    overflow: hidden;
+    width: 100%;
+}
+.list{
+    text-align: center;
+    list-style: none;
+}
+.list .list__item{
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid white;
+    width: 170px;
+}
+.list .list__item:first-child{
+    border-left:1px solid white ;
+}
+.list .list__item a{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    color: black;
+    line-height: 2px;
+}
+
+.list .list__item a:hover{
+    background-color: #7dc1d6;
+    color: white;
+}
+/* fin header */
+
+/* inicio main */
+/* inicio */
+.containSub-1{
+    position: relative;
+    text-align: center;
+    height: 400px;
+    background-image:url(../img/piscinaS1.jpg);
+    background-size: cover;
+    background-position:center ;
+    
+}
+
+.containSub-1 .containSub-1__text{
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#backdrop{
+    height: inherit;
+    backdrop-filter: blur(1.5px);
+}
+
+
+
+#inicioSection-1 .containSub-2{
+    height: 350px;
+    background-color:#187795;
+    text-align: center;
+    border-radius: 0 0 50px 50px;
+}
+#inicioSection-1 .containSub-2 .containSub-2__h2{
+    padding: 50px;
+    font-size: 25px;
+    color: white;
+    letter-spacing: 4px;
+
+}
+#inicioSection-1 .containSub-2 .containSub-2__text{
+    line-height: 40px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+#inicioSection-2{
+    padding-bottom: 40px;
+
+}
+
+#inicioSection-2 #contain-cards{
+    text-align: center;
+    padding-left: 195px;
+}
+#inicioSection-2 #contain-cards .card{
+    float: left;
+    margin: 0px 5px 0px 5px;
+    width: 430px;
+}
+#inicioSection-2 #contain-cards .card__img{
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+#inicioSection-2 #contain-cards .card .card__img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+#inicioSection-2 #contain-cards .card .card__description{
+    text-align: center;
+}
+#inicioSection-2 #contain-cards .card .card__description h3{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.331);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#inicioSection-2 #contain-cards .card .card__description p{
+    padding-top: 5px;
+    font-size: 21px;
+}
+
+#btn-cards{
+    margin-top: 0px;
+    text-align: center;
+    margin-top: 65px;
+}
+#btn-cards a{
+    box-sizing: border-box;
+}
+/* inicio */
+/* contacto */
+.contain-form{
+    text-align: center;
+}
+
+.contain-form__h2{
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #8ec5d6 ;
+    background-color: #8ec5d678;
+}
+#content-form{
+    border: 1px solid #8ec5d6;
+    box-shadow: 0px 0px 5px 0px #8ec5d6;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.form{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 55%;
+    margin: auto;
+}
+.content-input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.form__input{
+    width: 350px;
+    margin-left: 20px;
+    padding: 5px;
+    outline: none;
+}
+.form__input:focus{
+    background-color: #8ec5d63c ;
+}
+.form__label{
+    float: left;
+    margin-left: 38px;
+}
+.form__textarea{
+    resize: none;
+}
+.form__submit{
+    padding: 10px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* contacto */
+/* mantenimiento  */
+#maintenanceSection-1 p{
+    text-align: left;
+    line-height: 30px;
+    font-weight: 600;
+    width: 80%;
+    margin: auto;
+}
+.content-video{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#maintenanceSection-1 video{
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+#maintenanceSection-2{
+    background-image: url(../img/mantenimiento.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content-cards{
+    min-height: 600px;
+}
+.subtitle-maintenance{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 40px;
+
+}
+.maintenance-cards{
+    height: 400px;
+    width: 90%;
+    margin: auto;
+    background-color: rgba(0,0,0,0.1)
+}
+.maintenance-card{
+    float: left;
+    width: 300px;
+    padding: 20px;
+    
+}
+.maintenance-card__list{
+    font-weight: 500;
+}
+.maintenance-card__h3{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.maintenance-card__text{
+    margin-bottom: 10px;
+    line-height: 25px;
+    font-weight: 600;
+
+}
+.maintenance-card__list__item{
+    line-height: 35px;
+}
+/* mantenimiento */
+/* nosotros */
+#companySection-1{
+    padding-bottom: 50px;
+}
+#companySection-1 h2{
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 15px;
+}
+#companySection-1 p{
+    text-align: left;
+    line-height: 30px;
+    font-weight: 600;
+    width: 80%;
+    margin: auto;
+    word-spacing: 5px;
+}
+
+#companySection-2{
+    padding-bottom: 50px;
+    background-image: url(../img/valores.jpg);
+}
+.securities{
+    height: 100%;
+}
+
+.securities__h2{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    font-size: 40px;
+    color: white;
+}
+.securities-cards{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    height: 550px;
+}
+.securities-card{
+    float: left;
+    width: 50%;
+    margin-bottom: 30px;
+    color: white;
+}
+.securities-card__h3{
+    padding-bottom:30px ;
+}
+.securities-card__icon{
+    width: 70px;
+    margin: auto;
+}
+.securities-card__text{
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 600;
+    word-spacing: 5px;
+}
+/* nosotros */
+/* fin del main */
+
+/* inicio del aside */
+aside{
+    background-image: url(../img/aside.jpg);
+    background-attachment: fixed;
+    height: 560px;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 60%;
+    text-align: center;
+}
+.ubication{
+    height: inherit;
+    backdrop-filter: blur(2px);
+    padding-top: 50px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+.ubication:hover{
+    backdrop-filter: blur(0px);
+}
+aside .maps__icon{
+    width: 70px;
+    fill: #187795;
+}
+aside .ubication .ubication__text{
+    font-size: 25px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+.ubication iframe{
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+
+/* fin del aside */
+
+/* inicio footer */
+footer{
+    background-color: #CBE6F5;
+   
+}
+
+.logo-footer{
+    float: left;
+}
+
+footer .networks{
+    float: right;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+footer .networks .networks__h3{
+    font-size: 20px;
+    color: white; 
+}
+
+footer .networks .networks__icons{
+    margin-top: 15px;
+}
+
+footer .networks__icons svg{
+    width: 35px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: block;
+    float: left;
+}
+footer .networks #instagram{
+    padding-top: 8px;
+}
+
+footer .credits{
+    clear: both;
+    text-align: center;    
+    background-color: #187795;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+footer .networks #instagram:hover{
+    fill: #CD2E96;
+    cursor: pointer;
+}
+footer .networks #facebook:hover{
+    fill: #0E8AF0;
+    cursor: pointer;
+}
+footer .networks #twitter:hover{
+    fill: #1D9BF0;
+    cursor: pointer;
+}
+
+/* fin header */
+
+
+
+
+
