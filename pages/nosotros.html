@@ -26,12 +26,24 @@
         </div>
 
         <nav>
+            <input class="nav-checkbox" type="checkbox" id="btn">
+            <label class="nav-label" for="btn">menu</label>
             <ul class="list">
-                <li class="list__item"><a href="../index.html">Inicio</a></li>
-                <li class="list__item"><a href="./nosotros.html">Nosotros</a></li>
-                <li class="list__item"><a href="./producto.html">Productos</a></li>
-                <li class="list__item"><a href="./contacto.html">Contacto</a></li>
-                <li class="list__item"><a href="./mantenimiento.html">Mantenimiento</a></li>
+                <li class="list__item">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="list__item">
+                    <a href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="list__item contain-products">
+                    <a href="./producto.html">Productos</a>
+                </li>
+                <li class="list__item">
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+                <li class="list__item">
+                    <a href="./mantenimiento.html">Mantenimiento</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -44,60 +56,79 @@
             <div class="width-center">
                 <h1>¿Quienes Somos?</h1>
                 <h2>40 años de experiencia, calidad e innovación en la construcción de natatorios.</h2>
-                <p>Somos una empresa familiar de ventas de productos para construcción de piscinas y todos los quimicos necesario para el mantenimiento de su piscina
-                    Nuestra meta es ser considerados la mejor empresa de ventas de productos para piscinas, brindando calidad e innovación como
-                    valor diferencial.Actualizandonos constantemente con lo mas nuevo del mercado. Poseer en todos los detalles seriedad y compromiso, generando con nuestros clientes
-                    una confianza que nos permita obtener una mayor valoracion a nivel nacional y mundial.</p>    
+                <p>Somos una empresa familiar de ventas de productos para construcción de piscinas y todos los quimicos
+                    necesario para el mantenimiento de su piscina
+                    Nuestra meta es ser considerados la mejor empresa de ventas de productos para piscinas, brindando
+                    calidad e innovación como
+                    valor diferencial.Actualizandonos constantemente con lo mas nuevo del mercado. Poseer en todos los
+                    detalles seriedad y compromiso, generando con nuestros clientes
+                    una confianza que nos permita obtener una mayor valoracion a nivel nacional y mundial.
+                </p>
             </div>
-            </section>
+        </section>
         <section id="companySection-2">
             <div class="securities width-center">
                 <h2 class="securities__h2">Valores</h2>
                 <div class="securities-cards">
-                    <div class="box-card">
+                    <div class="box-card  securities-card--mb">
                         <div class="securities-card">
                             <h3 class="securities-card__h3">Liderazgo</h3>
                             <div class="securities-card__icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+                                </svg>
                             </div>
-                            <p class="securities-card__text">Estar siempre a la vanguardia en innovación tecnológica, materiales y servicios.</p>
+                            <p class="securities-card__text">Estar siempre a la vanguardia en innovación tecnológica,
+                                materiales y servicios.</p>
                         </div>
                         <div class="securities-card">
                             <h3 class="securities-card__h3">Transparencia</h3>
                             <div class="securities-card__icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M9 3a1 1 0 012 0v5.5a.5.5 0 001 0V4a1 1 0 112 0v4.5a.5.5 0 001 0V6a1 1 0 112 0v5a7 7 0 11-14 0V9a1 1 0 012 0v2.5a.5.5 0 001 0V4a1 1 0 012 0v4.5a.5.5 0 001 0V3z" clip-rule="evenodd" />
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M9 3a1 1 0 012 0v5.5a.5.5 0 001 0V4a1 1 0 112 0v4.5a.5.5 0 001 0V6a1 1 0 112 0v5a7 7 0 11-14 0V9a1 1 0 012 0v2.5a.5.5 0 001 0V4a1 1 0 012 0v4.5a.5.5 0 001 0V3z"
+                                        clip-rule="evenodd" />
+                                </svg>
                             </div>
-                            <p class="securities-card__text">Con nuestros clientes, aliados estratégicos y todo colaborador de la empresa.</p>
+                            <p class="securities-card__text">Con nuestros clientes, aliados estratégicos y todo
+                                colaborador de la empresa.</p>
                         </div>
                     </div>
                     <div class="box-card">
                         <div class="securities-card">
                             <h3 class="securities-card__h3">Calidad</h3>
                             <div class="securities-card__icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd" />
-                                    <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                                        clip-rule="evenodd" />
+                                    <path
+                                        d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                                </svg>
                             </div>
-                            <p class="securities-card__text">El sello de todo lo que hacemos; en nuestros productos, en el servicio, en la atención y hasta en los mínimos detalles.</p>
+                            <p class="securities-card__text">El sello de todo lo que hacemos; en nuestros productos, en
+                                el servicio, en la atención y hasta en los mínimos detalles.</p>
                         </div>
                         <div class="securities-card">
                             <h3 class="securities-card__h3">Seriedad</h3>
                             <div class="securities-card__icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1zm-5 8.274l-.818 2.552c.25.112.526.174.818.174.292 0 .569-.062.818-.174L5 10.274zm10 0l-.818 2.552c.25.112.526.174.818.174.292 0 .569-.062.818-.174L15 10.274z" clip-rule="evenodd" />
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1zm-5 8.274l-.818 2.552c.25.112.526.174.818.174.292 0 .569-.062.818-.174L5 10.274zm10 0l-.818 2.552c.25.112.526.174.818.174.292 0 .569-.062.818-.174L15 10.274z"
+                                        clip-rule="evenodd" />
+                                </svg>
                             </div>
                             <p class="securities-card__text">Porque cumplimos con los plazos y compromisos asumidos.</p>
                         </div>
                     </div>
-                    
+
                 </div>
-               
+
             </div>
         </section>
     </main>

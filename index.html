@@ -10,10 +10,10 @@
 </head>
 
 <body>
+
     <!-- Inicio del Header -->
     <header>
         <div class="width-center header--padding">
-
             <div id="header-logo">
                 <img class="logo" src="./img/logo.png" alt="logo">
                 <p class="header-logo__text">
@@ -23,14 +23,24 @@
         </div>
 
         <nav>
+                <input class="nav-checkbox" type="checkbox" id="btn">
+                <label class="nav-label" for="btn">menu</label>
             <ul class="list">
-                <li class="list__item"><a href="index.html">Inicio</a></li>
-                <li class="list__item"><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li class="list__item">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="list__item">
+                    <a href="./pages/nosotros.html">Nosotros</a>
+                </li>
                 <li class="list__item contain-products">
                     <a href="./pages/producto.html">Productos</a>
                 </li>
-                <li class="list__item"><a href="./pages/contacto.html">Contacto</a></li>
-                <li class="list__item"><a href="./pages/mantenimiento.html">Mantenimiento</a></li>
+                <li class="list__item">
+                    <a href="./pages/contacto.html">Contacto</a>
+                </li>
+                <li class="list__item">
+                    <a href="./pages/mantenimiento.html">Mantenimiento</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -57,10 +67,10 @@
             <div class="containSub-2"> 
                 <div class="width-center">
                     <h2 class="containSub-2__h2">ANALIZA DESINFECTA Y MANTENE</h2>
-                    <p class="containSub-2__text">SABÍAS QUE MANTENIENDO EL AGUA SANA Y LIMPIA TODO EL AÑO
+                    <p class="containSub-2__text containSub-2__text--white">SABÍAS QUE MANTENIENDO EL AGUA SANA Y LIMPIA TODO EL AÑO
                         ,Ahorras más ,Cuidas el agua del planeta , Es mejor para tu pileta
                     </p>
-                    <p class="containSub-2__text">¡NO TIRES EL AGUA, NO TIRES TU PLATA!</p>
+                    <p class="containSub-2__text containSub-2__text--bold">¡NO TIRES EL AGUA, NO TIRES TU PLATA!</p>
                     <span class="btn">
                         <a href="./pages/mantenimiento.html">Ver Mas</a>
                     </span>
@@ -76,7 +86,9 @@
 
                 <div class="card">
                     <div class="card__img">
-                        <img src="./img/PISCINAS_Area.jpg" alt="PISCINA">
+                        <div class="ventana ventana1"></div>
+
+                        <img src="./img/piscinaIndex1.jpg" alt="PISCINA">
                     </div>
                     <div class="card__description">
                         <h3>Piscinas</h3>
@@ -87,7 +99,9 @@
 
                 <div class="card">
                     <div class="card__img">
-                        <img src="./img/BDI_Area.jpg" alt="AREA">
+                        <div class="ventana ventana2"></div>
+
+                        <img src="./img/piscinaIndex2.jpg" alt="AREA">
                     </div>
                     <div class="card__description">
                         <h3>Bombas</h3>
@@ -99,7 +113,8 @@
 
                 <div class="card">
                     <div class="card__img">
-                        <img src="./img/H_Area.jpg" alt="AREA">
+                        <div class="ventana ventana3"></div>
+                        <img src="./img/piscinaIndex3.jpg" alt="AREA">
                     </div>
                     <div class="card__description">
                         <h3>Hidromasajes</h3>
@@ -170,8 +185,6 @@
 
     </footer>
     <!-- Fin del Footer -->
-
-
 
 </body>
 

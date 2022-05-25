@@ -24,18 +24,30 @@
         </div>
 
         <nav>
+            <input class="nav-checkbox" type="checkbox" id="btn">
+            <label class="nav-label" for="btn">menu</label>
             <ul class="list">
-                <li class="list__item"><a href="../index.html">Inicio</a></li>
-                <li class="list__item"><a href="./nosotros.html">Nosotros</a></li>
-                <li class="list__item"><a href="./producto.html">Productos</a></li>
-                <li class="list__item"><a href="./contacto.html">Contacto</a></li>
-                <li class="list__item"><a href="./mantenimiento.html">Mantenimiento</a></li>
+                <li class="list__item">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="list__item">
+                    <a href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="list__item contain-products">
+                    <a href="./producto.html">Productos</a>
+                </li>
+                <li class="list__item">
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+                <li class="list__item">
+                    <a href="./mantenimiento.html">Mantenimiento</a>
+                </li>
             </ul>
         </nav>
     </header>
     <!-- Fin del Header -->
 
-    <main>
+    <main id="main-contact">
         <section id="contactSection-1">
 
             <div class="contain-form width-center">
@@ -44,6 +56,9 @@
                 <div id="content-form">
                     <h2 class="contain-form__h2">Realize su consulta</h2>
                     <form action="" class="form">
+                        <div class="box-ilustration">
+                            <img src="../img/contactomail.png" alt="">
+                        </div>
                         <div class="content-input">
                             <label class="form__label" for="name">Nombre y Apellido</label>
                             <input class="form__input" type="text" name="name" required>
@@ -58,18 +73,17 @@
                         </div>
                         <div class="content-input">
                             <label class="form__label" for="message">Mensaje</label>
-                            <textarea class="form__input form__textarea" name="message" id="" cols="30"
-                                rows="10" required></textarea>
+                            <textarea class="form__input form__textarea" name="message" id="" cols="30" rows="10"
+                                required></textarea>
                         </div>
                         <input class="form__submit" type="submit" value="enviar">
-
                     </form>
-
                 </div>
 
             </div>
 
         </section>
+
     </main>
 
     <!-- Inicio del Footer -->
