@@ -49,6 +49,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 1fr auto auto;
+    background-color: white;
 }
 
 header {
