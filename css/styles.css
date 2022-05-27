@@ -11,12 +11,12 @@ html {
 /* FONTS */
 @font-face {
     font-family: "subtitle";
-    src: url("./fonts/Poppins.ttf");
+    src: url("../fonts/Poppins.ttf");
 }
 
 @font-face {
     font-family: "font-all";
-    src: url("./fonts/OpenSans-Light.ttf");
+    src: url("../fonts/OpenSans-Light.ttf");
 }
 
 h1 {
@@ -202,7 +202,7 @@ header nav {
 /* INICIO MAIN */
 .containSub-1 {
     text-align: center;
-    background-image: url(./img/piscinaS1.jpg);
+    background-image: url(../img/piscinaS1.jpg);
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -295,13 +295,13 @@ header nav {
     display: block;
 }
 .ventana1{
-    background-image: url(./img/PISCINAS_Area.jpg);
+    background-image: url(../img/PISCINAS_Area.jpg);
 }
 .ventana2{
-    background-image: url(./img/BDI_Area.jpg);
+    background-image: url(../img/BDI_Area.jpg);
 }
 .ventana3{
-    background-image: url(./img/H_Area.jpg);
+    background-image: url(../img/H_Area.jpg);
 }
 
 .card__img:hover .ventana{
@@ -334,7 +334,7 @@ header nav {
 
 /* CONTACTO */
 #main-contact{
-    background-image: url(./img/contacto.jpg);
+    background-image: url(../img/contacto.jpg);
     background-size: 100% 100%;
     background-position: center;
 }
@@ -573,7 +573,7 @@ header nav {
 
 #companySection-2 {
     padding-bottom: 5rem;
-    background-image: url(./img/valores.jpg);
+    background-image: url(../img/valores.jpg);
 }
 
 .securities {
@@ -639,7 +639,7 @@ header nav {
 /* INICIO ASIDE */
 
 aside {
-    background-image: url(./img/aside.jpg);
+    background-image: url(../img/aside.jpg);
     background-size: cover;
     background-position-x: center;
     background-position-y: 60%;
