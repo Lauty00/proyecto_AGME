@@ -46,13 +46,13 @@ a {
 
 /* GRID */
 body {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 1fr auto auto;
+    grid-template-rows: auto 1fr auto auto; */
     background-color: white;
 }
 
-header {
+/* header {
     grid-row: 1/2;
     grid-column: 1/5;
 }
@@ -72,7 +72,7 @@ aside {
 footer {
     grid-row: 4/5;
     grid-column: 1/5;
-}
+} */
 
 /* --- */
 
@@ -94,12 +94,12 @@ footer {
 }
 
 /* BUTTONS */
-.btn {
+.btn-a {
     display: block;
     padding-top: 3rem;
 }
 
-.btn a {
+.btn-a a {
     background-color: #2589BD;
     padding: 2rem;
     border-radius: 50px;
@@ -108,7 +108,7 @@ footer {
     transition: all 0.5s;
 }
 
-.btn a:hover {
+.btn-a a:hover {
     background-color: #328cbd;
     box-shadow: 0px 0px 5px 2px #1584bf;
 }
@@ -169,7 +169,7 @@ header nav {
     font-size: 1.8em;
 }
 
-.list {
+.listNav {
     height: inherit;
     width: 100%;
     text-align: center;
@@ -180,11 +180,11 @@ header nav {
 
 }
 
-.list .list__item {
+.listNav .listNav__item {
     flex-basis: 10%;
 }
 
-.list .list__item a {
+.listNav .listNav__item a {
     padding: 0.8rem;
     display: block;
     background-color: #8ec5d6;
@@ -193,7 +193,7 @@ header nav {
     transition: all 0.5s;
 }
 
-.list .list__item a:hover {
+.listNav .listNav__item a:hover {
     background-color: #65b7d0;
 }
 
@@ -262,20 +262,17 @@ header nav {
 
 }
 
-#contain-cards {
+/* #contain-targets {
     display: flex;
     flex-direction: row;
     padding-bottom: 10rem;
-}
+} */
 
-.card {
+/* .target {
     flex-basis: 34%;
-}
+} */
 
-.card__img {
-        width: 100%;
-        height: 80%;
-        margin: auto;
+.target__img {
         position: relative;
         overflow: hidden;
 }
@@ -289,7 +286,7 @@ header nav {
     transition: all .7s;
 }
 
-.card__img img {
+.target__img img {
     width: 100%;
     height: 100%;
     display: block;
@@ -304,31 +301,31 @@ header nav {
     background-image: url(../img/H_Area.jpg);
 }
 
-.card__img:hover .ventana{
+.target__img:hover .ventana{
     margin: 0;
 }
 
-.card__description {
+.target__description {
     text-align: center;
 }
 
-.card__description h3 {
+.target__description h3 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.331);
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin: 0 1rem 0 1rem;
 }
 
-.card__description p {
+.target__description p {
     padding-top: 0.5rem;
     font-size: 2.5em;
 }
 
-#btn-cards {
+#btn-targets {
     text-align: center;
 }
 
-#btn-cards a {
+#btn-targets a {
     box-sizing: border-box;
 }
 
@@ -531,7 +528,7 @@ header nav {
     flex-basis: 25%;
 }
 
-.maintenance-card__list {
+.maintenance-card__listNav {
     font-weight: 500;
 }
 
@@ -548,7 +545,7 @@ header nav {
 
 }
 
-.maintenance-card__list__item {
+.maintenance-card__listNav__item {
     line-height: 35px;
     font-size: 1.5em;
 }
@@ -576,11 +573,6 @@ header nav {
     background-image: url(../img/valores.jpg);
 }
 
-.securities {
-    display: flex;
-    flex-direction: column;
-}
-
 .securities__h2 {
     text-align: center;
     padding-bottom: 5rem;
@@ -588,7 +580,7 @@ header nav {
     font-size: 4em;
     color: white;
 }
-
+/* 
 .securities-cards {
     display: flex;
     flex-direction: column;
@@ -606,10 +598,12 @@ header nav {
 .securities-card {
     color: white;
     flex-basis: 50%;
-}
+} */
 
 .securities-card__h3 {
+    text-align: center;
     padding-bottom: 3rem;
+    color: white;
 }
 
 .securities-card__icon {
@@ -624,6 +618,7 @@ header nav {
 }
 
 .securities-card__text {
+    color: white;
     text-align: center;
     line-height: 30px;
     font-weight: 600;
@@ -708,8 +703,8 @@ footer {
     padding-left: 2.5rem;
 }
 
-.networks__icons .icon {
-    width: 35px;
+.networks__icons .redes {
+    width: 50px;
     padding: 1rem 1rem 0 1rem;
     float: left;
     transition: all 0.5s;
@@ -790,16 +785,16 @@ footer {
 @media (max-width:768px) {
 
     /* inicio */
-    #contain-cards {
+    #contain-targets {
         flex-direction: column;
         row-gap: 6rem;
     }
 
-    .card__img {
+    .target__img {
         width: 70%;
     }
 
-    .list .list__item {
+    .listNav .listNav__item {
         flex-basis: 15%;
     }
 
@@ -828,12 +823,12 @@ footer {
         display: block;
     }
 
-    .list {
+    .listNav {
         flex-direction: column;
         display: none;
     }
 
-    .nav-checkbox:checked~.list {
+    .nav-checkbox:checked~.listNav {
         display: flex;
     }
 
