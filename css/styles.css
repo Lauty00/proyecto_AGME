@@ -46,13 +46,13 @@ a {
 
 /* GRID */
 body {
-    /* display: grid;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 1fr auto auto; */
+    grid-template-rows: auto 1fr auto auto;
     background-color: white;
 }
 
-/* header {
+header {
     grid-row: 1/2;
     grid-column: 1/5;
 }
@@ -72,7 +72,7 @@ aside {
 footer {
     grid-row: 4/5;
     grid-column: 1/5;
-} */
+}
 
 /* --- */
 
@@ -81,7 +81,7 @@ footer {
 .logo {
     width: 100px;
     height: 100px;
-    margin-left: 25px;
+    margin-left: 2.5rem;
 }
 
 /* --- */
@@ -247,7 +247,7 @@ header nav {
 .containSub-2__text {
     line-height: 40px;
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 .containSub-2__text--bold{
     font-weight: bold;
@@ -261,16 +261,6 @@ header nav {
     padding-bottom: 4rem;
 
 }
-
-/* #contain-targets {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 10rem;
-} */
-
-/* .target {
-    flex-basis: 34%;
-} */
 
 .target__img {
         position: relative;
@@ -355,36 +345,8 @@ header nav {
     box-shadow: 0px 0px 5px 0px #8ec5d6;
     width: 60%;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 4rem;
 
-}
-.box-ilustration{
-    width: 50%;
-    margin: 0 auto;
-}
-.box-ilustration img{
-    display: block;
-    width: 100%;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    text-align: center;
-    background-color: white;
-}
-
-.content-input {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    margin: 0 auto;
 }
 
 .form__input {
@@ -398,7 +360,7 @@ header nav {
 
 .form__label {
     text-align: left;
-    padding-bottom: 1rem;
+    padding-bottom: .7rem;
 }
 
 .form__textarea {
@@ -468,7 +430,7 @@ header nav {
     padding-top: 1rem;
     padding-bottom: 1rem;
     flex-basis: 10%;
-
+    margin: 0;
 }
 
 .box-img img {
@@ -488,11 +450,11 @@ header nav {
 #maintenanceSection-1 p {
     line-height: 30px;
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 
 .content-video {
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 #maintenanceSection-1 video {
@@ -503,35 +465,16 @@ header nav {
 }
 
 #maintenanceSection-2 {
-    background-image: url(./img/mantenimiento.jpg);
+    background-image: url(../img/mantenimiento.jpg);
     background-size: cover;
     background-position: center;
     padding-bottom: 5rem;
 }
 
-.subtitle-maintenance {
-    text-align: center;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    font-size: 4em;
-
-}
 
 .maintenance-cards {
     background-color: rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: row;
 }
-
-.maintenance-card {
-    padding: 2rem;
-    flex-basis: 25%;
-}
-
-.maintenance-card__listNav {
-    font-weight: 500;
-}
-
 .maintenance-card__h3 {
     text-align: center;
     padding-top: 1rem;
@@ -539,23 +482,20 @@ header nav {
 }
 
 .maintenance-card__text {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     line-height: 25px;
     font-weight: 600;
 
 }
 
-.maintenance-card__listNav__item {
+.maintenance-card__list__item {
     line-height: 35px;
     font-size: 1.5em;
-}
+} */
 
 /* --- */
 /* NOSOTROS */
-#companySection-1 {
-    padding-top: 5rem;
-    padding-bottom: 10rem;
-}
+
 
 #companySection-1 h2 {
     padding-bottom: 1.5rem;
@@ -580,25 +520,6 @@ header nav {
     font-size: 4em;
     color: white;
 }
-/* 
-.securities-cards {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.box-card {
-    display: flex;
-    flex-direction: row;
-}
-.securities-card--mb{
-    margin-bottom: 10rem;
-}
-
-.securities-card {
-    color: white;
-    flex-basis: 50%;
-} */
 
 .securities-card__h3 {
     text-align: center;
@@ -649,12 +570,12 @@ aside .ubication .ubication__icon {
 
 aside .ubication .ubication__text {
     font-size: 2.5em;
-    margin-top: 25px;
+    margin-top: 2.5rem;
     font-weight: bold;
 }
 
 aside .ubication iframe {
-    margin-top: 30px;
+    margin-top: 3rem;
     border-radius: 15px;
     width: 50%;
 }
@@ -797,23 +718,13 @@ footer {
     .listNav .listNav__item {
         flex-basis: 15%;
     }
-
     /* -- */
-
     /* mantenimiento */
-    .maintenance-cards {
-        flex-direction: column;
-    }
-
-    .maintenance-card {
-        padding: 3rem;
-    }
-
     #maintenanceSection-1 video {
-        width: 80%;
+        width: 100%;
     }
-
     /* -- */
+
 }
 
 @media (max-width:425px) {
@@ -830,10 +741,6 @@ footer {
 
     .nav-checkbox:checked~.listNav {
         display: flex;
-    }
-
-    .width-center {
-        width: 90%;
     }
 
     body {
@@ -864,21 +771,6 @@ footer {
     }
 
     /* -- */
-
-    /* mantenimiento */
-    #maintenanceSection-1 p {
-        padding: 0 2rem 0 2rem;
-    }
-
-    /* -- */
-    /* contacto */
-   .content-input {
-        width: 60%;
-    }
-    #content-form {
-        width: 90%;
-    }
-    /* -- */
     /* nosotros */
     .securities-cards {
         flex-direction: column;
@@ -902,10 +794,6 @@ footer {
         gap: 1rem;
         margin-top: 2rem;
     }
-    /* .box-img {
-        flex-basis: 45%;
-
-    } */
     /* -- */
 
 }

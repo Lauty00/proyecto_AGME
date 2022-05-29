@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Document</title>
 </head>
@@ -13,7 +13,7 @@
 <body>
     <!-- Inicio del Header -->
     <header>
-        <div class="width-center header--padding">
+        <div class="container header--padding">
             <div id="header-logo">
                 <img class="logo" src="../img/logo.png" alt="logo">
                 <p class="header-logo__text">
@@ -49,33 +49,33 @@
     <main id="main-contact">
         <section id="contactSection-1">
 
-            <div class="contain-form width-center">
+            <div class="contain-form container">
 
                 <h1 class="contain-form__h1">Contacto</h1>
                 <div id="content-form">
-                    <h2 class="contain-form__h2">Realize su consulta</h2>
-                    <form action="" class="form">
-                        <div class="box-ilustration">
-                            <img src="../img/contactomail.png" alt="">
+                    <h2 class="contain-form__h2 mb-0">Realize su consulta</h2>
+                    <form action="" class="form bg-white">
+                        <div class="box-ilustration w-50 mx-auto">
+                            <img class="w-100" src="../img/contactomail.png" alt="">
                         </div>
-                        <div class="content-input">
+                        <div class="content-input d-flex flex-column w-50 mx-auto mb-3">
                             <label class="form__label" for="name">Nombre y Apellido</label>
                             <input class="form__input" type="text" name="name" required>
                         </div>
-                        <div class="content-input">
+                        <div class="content-input d-flex flex-column w-50 mx-auto mb-3">
                             <label class="form__label" for="email">email</label>
                             <input class="form__input" type="email" name="email" required>
                         </div>
-                        <div class="content-input">
+                        <div class="content-input d-flex flex-column w-50 mx-auto mb-3">
                             <label class="form__label" for="asunto">Asunto</label>
                             <input class="form__input" type="text" name="asunto" required>
                         </div>
-                        <div class="content-input">
+                        <div class="content-input d-flex flex-column w-50 mx-auto mb-5">
                             <label class="form__label" for="message">Mensaje</label>
                             <textarea class="form__input form__textarea" name="message" id="" cols="30" rows="10"
                                 required></textarea>
                         </div>
-                        <input class="form__submit" type="submit" value="enviar">
+                        <input class="form__submit mb-5" type="submit" value="enviar">
                     </form>
                 </div>
 
@@ -87,7 +87,7 @@
 
     <!-- Inicio del Footer -->
     <footer>
-        <div class="width-center" id="footer-flex">
+        <div class="container" id="footer-flex">
             <div class="footer-logo ">
                 <img class="logo" src="../img/logo.png" alt="LOGO">
             </div>
@@ -119,8 +119,8 @@
 
     </footer>
     <!-- Fin del Footer -->
-    <script src="./js/bootstrap.bundle.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>
