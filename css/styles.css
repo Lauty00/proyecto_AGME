@@ -170,14 +170,12 @@ header nav {
 }
 
 .listNav {
-    height: inherit;
     width: 100%;
     text-align: center;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 
 .listNav .listNav__item {
@@ -672,7 +670,7 @@ footer {
 
 /* FIN FOOTER */
 
-
+/* media queries */
 @media (max-width:1024px) {
 
     /* inicio */
@@ -735,8 +733,10 @@ footer {
     }
 
     .listNav {
+        position: absolute;
         flex-direction: column;
         display: none;
+        z-index: 1;
     }
 
     .nav-checkbox:checked~.listNav {
@@ -797,6 +797,9 @@ footer {
     /* -- */
 
 }
+
+
+/* animaciones */
 
 @keyframes icon1 {
     0%{
