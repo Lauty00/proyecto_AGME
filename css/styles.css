@@ -383,6 +383,10 @@ header nav {
 
 /* --- */
 /*  PRODUCTO  */
+#main-products{
+    background-image: url(../img/fondoProductos.webp);
+    background-size: cover;
+}
 #contain-products {
     padding-top: 4rem;
 }
@@ -468,7 +472,6 @@ header nav {
     background-position: center;
     padding-bottom: 5rem;
 }
-
 
 .maintenance-cards {
     background-color: rgba(0, 0, 0, 0.1);
