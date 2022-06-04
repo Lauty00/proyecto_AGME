@@ -1,4 +1,4 @@
-/* INICIO MAIN */
+/* Inicio */
 .containSub-1 {
     text-align: center;
     background-image: url(../img/piscinaS1.jpg);
@@ -60,7 +60,6 @@
 #section-2 {
     padding-top: 4rem;
     padding-bottom: 4rem;
-
     .target__img {
         position: relative;
         overflow: hidden;
@@ -89,9 +88,10 @@
         .ventana3 {
             background-image: url(../img/H_Area.jpg);
         }
-        .target__img:hover .ventana {
-            margin: 0;
-        }
+        
+    }
+    .target__img:hover .ventana {
+        margin: 0;
     }
     .target__description {
         text-align: center;
@@ -108,19 +108,47 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
 #btn-targets {
     text-align: center;
     a {
         box-sizing: border-box;
     }
 }
+
+/* INICIO ASIDE */
+
+aside {
+    background-image: url(../img/aside.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 60%;
+    text-align: center;
+    background-attachment: fixed;
+    .ubication {
+        backdrop-filter: blur(2px);
+        padding-top: 5rem;
+        box-sizing: border-box;
+        transition: all 0.5s;
+        padding-bottom: 4rem;
+        &__icon {
+            width: 70px;
+            fill: #187795;
+        }
+        &__text {
+            font-size: 2.5em;
+            margin-top: 2.5rem;
+            font-weight: bold;
+        }
+        iframe {
+            margin-top: 3rem;
+            border-radius: 15px;
+            width: 50%;
+        }
+    }
+    .ubication:hover {
+        backdrop-filter: blur(0px);
+    }
+}
+/* FIN ASIDE */
+
+/*Fin Inicio*/
