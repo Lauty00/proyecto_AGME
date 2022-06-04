@@ -1,0 +1,70 @@
+/* CONTACTO */
+#main-contact{
+    background-image: url(../img/contacto.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+}
+#contactSection-1 {
+    padding-top: 4rem;
+    .contain-form {
+        text-align: center;
+        padding-bottom: 3rem;
+        &__h2 {
+            padding: 2rem 0 2rem 0;
+            border-bottom: 1px solid #8ec5d6;
+            background-color: #8ec5d678;
+        }
+        #content-form {
+            border: 1px solid #8ec5d6;
+            box-shadow: 0px 0px 5px 0px #8ec5d6;
+            width: 60%;
+            margin: 0 auto;
+            margin-top: 4rem;
+            .form{
+                &__input {
+                    padding: 0.5rem;
+                    outline: none;
+                }
+                
+                &__input:focus {
+                    background-color: #8ec5d63c;
+                }
+                
+                &__label {
+                    text-align: left;
+                    padding-bottom: .7rem;
+                }
+                
+                &__textarea {
+                    resize: none;
+                }
+                
+                &__submit {
+                    padding: 1rem;
+                    width: 100px;
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    cursor: pointer;
+                    margin: auto;
+                    background-color: #b9deec;
+                    border: none;
+                    transition: all 0.5s;
+                }
+                
+                &__submit:hover {
+                    box-shadow: 0px 0px 5px 1px #7adafd inset;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+/* --- */
