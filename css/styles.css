@@ -1,2 +1,227 @@
-body main {
-  background-color: red; }
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: font-all;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "subtitle";
+  src: url("../fonts/Poppins.ttf");
+}
+
+@font-face {
+  font-family: "font-all";
+  src: url("../fonts/OpenSans-Light.ttf");
+}
+
+h1 {
+  font-size: 5em;
+  text-align: center;
+  border-bottom: 2px solid #187795;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p,
+label {
+  font-size: 1.5em;
+}
+
+a {
+  font-size: 1.8em;
+}
+
+/* --- */
+/* LOGO */
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 2.5rem;
+}
+
+/* --- */
+/* BUTTONS */
+.btn-a {
+  display: block;
+  padding-top: 3rem;
+}
+
+.btn-a a {
+  background-color: #2589BD;
+  padding: 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+
+.btn-a a:hover {
+  background-color: #328cbd;
+  box-shadow: 0px 0px 5px 2px #1584bf;
+}
+
+/* --- */
+/* INICIO HEADER */
+header {
+  width: 100%;
+}
+
+header nav {
+  background-color: #8ec5d6;
+  overflow: hidden;
+}
+
+header nav .nav-label {
+  display: none;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  font-size: 1.8em;
+}
+
+header nav .nav-checkbox {
+  width: 100%;
+  display: none;
+}
+
+header nav .listNav {
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav .listNav__item {
+  flex-basis: 10%;
+}
+
+header nav .listNav__item a {
+  padding: 0.8rem;
+  display: block;
+  background-color: #8ec5d6;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+
+header nav .listNav__item a:hover {
+  background-color: #65b7d0;
+}
+
+.header--padding {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#header-logo {
+  display: flex;
+  flex-direction: row;
+  padding: .5rem;
+  column-gap: 3rem;
+}
+
+#header-logo .header-logo__text {
+  flex-basis: 80%;
+  text-align: center;
+  line-height: 100px;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  font-weight: bolder;
+}
+
+/* FIN HEADER */
+/* INICIO FOOTER */
+footer {
+  padding-top: 1rem;
+  border-top: 2px solid #187795;
+}
+
+footer #footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer #footer-flex .networks {
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 0px;
+  padding-top: 1rem;
+}
+
+footer #footer-flex .networks__h3 {
+  font-size: 2em;
+  color: white;
+}
+
+footer #footer-flex .networks__icons {
+  padding-left: 2.5rem;
+}
+
+footer #footer-flex .networks__icons .redes {
+  width: 50px;
+  padding: 1rem 1rem 0 1rem;
+  float: left;
+  transition: all 0.5s;
+}
+
+footer #footer-flex .networks__icons #facebook {
+  animation: icon1 4s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+footer #footer-flex .networks__icons #facebook:hover {
+  fill: #0E8AF0;
+  cursor: pointer;
+}
+
+footer #footer-flex .networks__icons #instagram {
+  animation: icon2 4s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+footer #footer-flex .networks__icons #instagram:hover {
+  fill: #CD2E96;
+  cursor: pointer;
+}
+
+footer #footer-flex .networks__icons #twitter {
+  animation: icon3 4s ease-in-out infinite;
+  animation-delay: 2.2s;
+}
+
+footer #footer-flex .networks__icons #twitter:hover {
+  fill: #1D9BF0;
+  cursor: pointer;
+}
+
+footer #footer-flex .networks #instagram {
+  padding-top: 0.8rem;
+}
+
+footer .credits {
+  clear: both;
+  text-align: center;
+  background-color: #187795;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+/* FIN FOOTER */

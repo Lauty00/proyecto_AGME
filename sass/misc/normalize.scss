@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: font-all;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  /* FONTS */
+  @font-face {
+    font-family: "subtitle";
+    src: url("../fonts/Poppins.ttf");
+  }
+  
+  @font-face {
+    font-family: "font-all";
+    src: url("../fonts/OpenSans-Light.ttf");
+  }
+  
+  h1 {
+    font-size: 5em;
+    text-align: center;
+    border-bottom: 2px solid #187795;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+  }
+  
+  h3 {
+    font-size: 2em;
+  }
+  
+  p,
+  label {
+    font-size: 1.5em;
+  }
+  
+  a {
+    font-size: 1.8em;
+  }
+  
+  /* --- */
+  
+  
+  /* LOGO */
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 2.5rem;
+  }
+  
+  /* --- */
+  
+  /* BUTTONS */
+  .btn-a {
+    display: block;
+    padding-top: 3rem;
+    a {
+        background-color: #2589BD;
+        padding: 2rem;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white;
+        transition: all 0.5s;
+      }
+      a:hover {
+        background-color: #328cbd;
+        box-shadow: 0px 0px 5px 2px #1584bf;
+      }
+  }
+  
+  /* --- */
