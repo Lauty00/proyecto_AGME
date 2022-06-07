@@ -1,115 +1,126 @@
 /* Inicio */
-.containSub-1 {
-    text-align: center;
-    background-image: url(../img/piscinaS1.jpg);
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-
-    #backdrop {
-        padding: inherit;
-        backdrop-filter: blur(1.5px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 10rem;
-        padding-bottom: 10rem;
-    }
-
-    &__text {
-        color: white;
-        font-size: 4em;
+#section-1 {
+    .containSub-1 {
         text-align: center;
-        animation: animateText 10s linear;
-        animation-iteration-count: infinite;
+        background-image: url(../img/piscinaS1.jpg);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+
+        #backdrop {
+            padding: inherit;
+            backdrop-filter: blur(1.5px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+        }
+
+        &__text {
+            color: white;
+            font-size: 4em;
+            text-align: center;
+            animation: animateText 10s linear;
+            animation-iteration-count: infinite;
+        }
+    }
+
+    .containSub-2 {
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+        background-color: #187795;
+        background-position: 50% 40%;
+        text-align: center;
+        border-radius: 0 0 50px 50px;
+
+        &__h2 {
+            padding: 5rem;
+            font-size: 2.5em;
+            color: white;
+            letter-spacing: 4px;
+        }
+
+        &__text {
+            line-height: 40px;
+            font-size: 2.5em;
+            margin-bottom: 2rem;
+        }
+
+        &__text--bold {
+            font-weight: bold;
+        }
+
+        &__text--white {
+            color: white;
+        }
     }
 }
 
-.containSub-2 {
-    padding-top: 1rem;
-    padding-bottom: 5rem;
-    background-color: #187795;
-    background-position: 50% 40%;
-    text-align: center;
-    border-radius: 0 0 50px 50px;
-
-    &__h2 {
-        padding: 5rem;
-        font-size: 2.5em;
-        color: white;
-        letter-spacing: 4px;
-    }
-
-    &__text {
-        line-height: 40px;
-        font-size: 2.5em;
-        margin-bottom: 2rem;
-    }
-
-    &__text--bold {
-        font-weight: bold;
-    }
-
-    &__text--white {
-        color: white;
-    }
-}
 
 
 
 #section-2 {
     padding-top: 4rem;
     padding-bottom: 4rem;
-    .target__img {
-        position: relative;
-        overflow: hidden;
-        .ventana{
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            background-position: center;
-            background-size: 100% 100%;
-            margin-top: -100%;
-            transition: all .7s;
+    .target{
+        &__img {
+            position: relative;
+            overflow: hidden;
+    
+            .ventana {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-position: center;
+                background-size: 100% 100%;
+                margin-top: -100%;
+                transition: all .7s;
+            }
+    
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+    
+            .ventana1 {
+                background-image: url(../img/PISCINAS_Area.jpg);
+            }
+    
+            .ventana2 {
+                background-image: url(../img/BDI_Area.jpg);
+            }
+    
+            .ventana3 {
+                background-image: url(../img/H_Area.jpg);
+            }
+    
         }
-        img {
-            width: 100%;
-            height: 100%;
-            display: block;
+        &__img:hover .ventana {
+            margin: 0;
         }
-        .ventana1 {
-            background-image: url(../img/PISCINAS_Area.jpg);
+        &__description {
+            text-align: center;
+    
+            h3 {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.331);
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                margin: 0 1rem 0 1rem;
+            }
+    
+            p {
+                padding-top: 0.5rem;
+                font-size: 2.5em;
+            }
         }
-        
-        .ventana2 {
-            background-image: url(../img/BDI_Area.jpg);
-        }
-        
-        .ventana3 {
-            background-image: url(../img/H_Area.jpg);
-        }
-        
-    }
-    .target__img:hover .ventana {
-        margin: 0;
-    }
-    .target__description {
-        text-align: center;
-        h3 {
-            border-bottom: 1px solid rgba(0, 0, 0, 0.331);
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            margin: 0 1rem 0 1rem;
-        }
-        
-        p {
-            padding-top: 0.5rem;
-            font-size: 2.5em;
-        }
-    }
+    }   
 }
+
 #btn-targets {
     text-align: center;
+
     a {
         box-sizing: border-box;
     }
@@ -124,31 +135,38 @@ aside {
     background-position-y: 60%;
     text-align: center;
     background-attachment: fixed;
+
     .ubication {
         backdrop-filter: blur(2px);
         padding-top: 5rem;
         box-sizing: border-box;
         transition: all 0.5s;
         padding-bottom: 4rem;
+
         &__icon {
             width: 70px;
             fill: #187795;
         }
+
         &__text {
             font-size: 2.5em;
             margin-top: 2.5rem;
             font-weight: bold;
         }
+
         iframe {
             margin-top: 3rem;
             border-radius: 15px;
             width: 50%;
         }
     }
+
     .ubication:hover {
         backdrop-filter: blur(0px);
     }
 }
+
 /* FIN ASIDE */
+
 
 /*Fin Inicio*/

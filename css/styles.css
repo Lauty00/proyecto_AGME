@@ -34,6 +34,38 @@ a {
   font-size: 1.8em; }
 
 /* --- */
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr); }
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 1fr auto auto;
+  background-color: white; }
+
+header {
+  grid-row: 1/2;
+  grid-column: 1/5; }
+
+main {
+  grid-row: 2/3;
+  grid-column: 1/5;
+  min-height: 100vh;
+  animation: opacityAnimate 1s; }
+
+aside {
+  grid-row: 3/4;
+  grid-column: 1/5; }
+
+footer {
+  grid-row: 4/5;
+  grid-column: 1/5; }
+
+/* --- */
+/* --- */
 /* LOGO */
 .logo {
   width: 100px;
@@ -111,13 +143,13 @@ header {
 
 /* FIN HEADER */
 /* Inicio */
-.containSub-1 {
+#section-1 .containSub-1 {
   text-align: center;
   background-image: url(../img/piscinaS1.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden; }
-  .containSub-1 #backdrop {
+  #section-1 .containSub-1 #backdrop {
     padding: inherit;
     backdrop-filter: blur(1.5px);
     display: flex;
@@ -125,32 +157,32 @@ header {
     justify-content: center;
     padding-top: 10rem;
     padding-bottom: 10rem; }
-  .containSub-1__text {
+  #section-1 .containSub-1__text {
     color: white;
     font-size: 4em;
     text-align: center;
     animation: animateText 10s linear;
     animation-iteration-count: infinite; }
 
-.containSub-2 {
+#section-1 .containSub-2 {
   padding-top: 1rem;
   padding-bottom: 5rem;
   background-color: #187795;
   background-position: 50% 40%;
   text-align: center;
   border-radius: 0 0 50px 50px; }
-  .containSub-2__h2 {
+  #section-1 .containSub-2__h2 {
     padding: 5rem;
     font-size: 2.5em;
     color: white;
     letter-spacing: 4px; }
-  .containSub-2__text {
+  #section-1 .containSub-2__text {
     line-height: 40px;
     font-size: 2.5em;
     margin-bottom: 2rem; }
-  .containSub-2__text--bold {
+  #section-1 .containSub-2__text--bold {
     font-weight: bold; }
-  .containSub-2__text--white {
+  #section-1 .containSub-2__text--white {
     color: white; }
 
 #section-2 {
@@ -227,9 +259,7 @@ aside {
 /*Fin Inicio*/
 /*Contacto*/
 #main-contact {
-  background-image: url(../img/contacto.jpg);
-  background-size: 100% 100%;
-  background-position: center; }
+  background-color: white; }
 
 #contactSection-1 {
   padding-top: 4rem; }
@@ -270,6 +300,138 @@ aside {
         box-shadow: 0px 0px 5px 1px #7adafd inset; }
 
 /*Fin Contacto*/
+/* media queries */
+@media (max-width: 1024px) {
+  #content-form {
+    width: 80%; } }
+
+/* MANTENIMIENTO  */
+#maintenanceSection-1 {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+  #maintenanceSection-1 p {
+    line-height: 30px;
+    font-weight: 600;
+    margin-top: 4rem; }
+  #maintenanceSection-1 .content-video {
+    margin-top: 3rem; }
+    #maintenanceSection-1 .content-video video {
+      display: block;
+      width: 50%;
+      margin: auto; }
+
+#maintenanceSection-2 {
+  background-image: url(../img/mantenimiento.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 5rem; }
+  #maintenanceSection-2 .maintenance-cards {
+    background-color: rgba(0, 0, 0, 0.1); }
+    #maintenanceSection-2 .maintenance-cards .maintenance-card__h3 {
+      text-align: center;
+      padding-top: 1rem;
+      padding-bottom: 3rem; }
+    #maintenanceSection-2 .maintenance-cards .maintenance-card__text {
+      margin-bottom: 2rem;
+      line-height: 25px;
+      font-weight: 600; }
+    #maintenanceSection-2 .maintenance-cards .maintenance-card__list__item {
+      line-height: 35px;
+      font-size: 1.5em; }
+
+/* --- */
+/* NOSOTROS */
+#companySection-1 h2 {
+  padding-bottom: 1.5rem;
+  padding-top: 5rem; }
+
+#companySection-1 p {
+  line-height: 30px;
+  font-weight: 600;
+  word-spacing: 5px; }
+
+#companySection-2 {
+  padding-bottom: 5rem;
+  background: #0b0979;
+  background: linear-gradient(90deg, #0b0979 0%, #0745a1 84%, #0569b8 100%); }
+  #companySection-2 .securities-h2 {
+    text-align: center;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    font-size: 4em;
+    color: white; }
+  #companySection-2 .securities-card__h3 {
+    text-align: center;
+    padding-bottom: 3rem;
+    color: white; }
+  #companySection-2 .securities-card__icon {
+    width: 70px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 2rem 0 2rem 0; }
+  #companySection-2 .securities-card__icon > svg:hover {
+    color: #cbe6f5; }
+  #companySection-2 .securities-card__text {
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 600;
+    word-spacing: 5px;
+    width: 85%;
+    margin: auto; }
+
+.carousel {
+  height: 65vh; }
+  .carousel .carousel-inner {
+    height: inherit; }
+    .carousel .carousel-inner .carousel-item {
+      height: inherit;
+      object-fit: cover; }
+      .carousel .carousel-inner .carousel-item img {
+        height: inherit; }
+
+/* --- */
+/*  PRODUCTO  */
+#contain-products {
+  padding-top: 4rem; }
+  #contain-products .products__card {
+    margin-top: 6rem;
+    margin-bottom: 6rem; }
+    #contain-products .products__card__h2 {
+      background-color: #187795;
+      padding: 1rem;
+      color: white; }
+    #contain-products .products__card__imgs {
+      display: grid;
+      grid-template-columns: repeat(4, 20%);
+      grid-template-rows: 1fr min-content;
+      gap: 1rem;
+      margin-top: 2rem; }
+  #contain-products .products .box-img {
+    text-align: center;
+    border: 2px solid #8ec5d6;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column; }
+    #contain-products .products .box-img div {
+      flex-basis: 90%; }
+    #contain-products .products .box-img p {
+      font-weight: 600;
+      background-color: #8ec5d6;
+      box-sizing: border-box;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      flex-basis: 10%;
+      margin: 0; }
+    #contain-products .products .box-img img {
+      width: 100%;
+      height: 100%;
+      display: block; }
+  #contain-products .products .box-img:hover {
+    border: 2px solid #3698d1; }
+
+/* -- */
 /* INICIO FOOTER */
 footer {
   padding-top: 1rem;
@@ -378,3 +540,87 @@ footer {
   100% {
     transform: translate(0%, 0%);
     transform: scale(1); } }
+
+/* media queries */
+@media (max-width: 1024px) {
+  /* global */
+  #header-logo {
+    column-gap: 3rem; }
+    #header-logo .header-logo__text {
+      line-height: 40px;
+      padding-top: 1rem;
+      word-spacing: 0px; }
+  main p {
+    font-size: 1.4em; }
+  /* -- */
+  /* contacto */
+  #content-form {
+    width: 80%; }
+  /* -- */ }
+
+@media (max-width: 768px) {
+  /*global*/
+  header nav .listNav__item {
+    flex-basis: 15%; }
+  /* -- */
+  /* inicio */
+  #contain-targets {
+    flex-direction: column;
+    row-gap: 6rem; }
+  #section-2 .target__img {
+    width: 70%; }
+  /* -- */
+  /* mantenimiento */
+  #maintenanceSection-1 .content-video video {
+    width: 100%; }
+  /* -- */ }
+
+@media (max-width: 425px) {
+  /*global*/
+  header nav .nav-label {
+    display: block; }
+  header nav .nav-checkbox:checked ~ .listNav {
+    display: flex; }
+  header nav .listNav {
+    position: absolute;
+    flex-direction: column;
+    display: none;
+    z-index: 1; }
+  body {
+    font-size: 8px; }
+  #header-logo {
+    flex-direction: column;
+    align-items: center; }
+    #header-logo .logo {
+      margin: 0; }
+  /* -- */
+  /* inicio */
+  #section-1 .containSub-1__text {
+    padding-right: 1rem;
+    padding-left: 1rem; }
+  #section-1 .containSub-2__text {
+    padding-right: 1rem;
+    padding-left: 1rem; }
+  #section-2 .target__description h3 {
+    font-size: 2rem; }
+  aside .ubication iframe {
+    width: 80%; }
+  /* -- */
+  /* nosotros */
+  #companySection-2 .securities-cards {
+    flex-direction: column; }
+    #companySection-2 .securities-cards .securities-card {
+      margin-bottom: 5rem; }
+      #companySection-2 .securities-cards .securities-card__h3 {
+        margin-bottom: 0px; }
+      #companySection-2 .securities-cards .securities-card__text {
+        text-align: left; }
+  /* -- */
+  /* producto */
+  #contain-products .products__card__imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr min-content;
+    gap: 1rem;
+    margin-top: 2rem; }
+  /* -- */ }
