@@ -16,7 +16,6 @@
 
 #companySection-2 {
     padding-bottom: 5rem;
-    background: rgb(11,9,121);
     background: linear-gradient(90deg, rgba(11,9,121,1) 0%, rgba(7,69,161,1) 84%, rgba(5,105,184,1) 100%);
     .securities-h2 {
         text-align: center;
@@ -61,12 +60,12 @@
 .carousel{
     height: 65vh;
     .carousel-inner{
-        height: inherit;
+        @extend .carousel;
         .carousel-item{
-            height: inherit;
+            @extend .carousel;
             object-fit: cover;
             img{
-                height: inherit;
+                @extend .carousel;
             }
         }
     }

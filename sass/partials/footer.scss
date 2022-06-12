@@ -1,4 +1,8 @@
 /* INICIO FOOTER */
+@mixin styleIcon($color) {
+    color: $color;
+    cursor: pointer;
+}
 footer {
     padding-top: 1rem;
     border-top: 2px solid #187795;
@@ -10,7 +14,7 @@ footer {
         padding-top: 1rem;
         padding-bottom: 1rem;
 
-        .networks{
+        .networks {
             text-align: center;
             box-sizing: border-box;
             margin-top: 0px;
@@ -21,7 +25,7 @@ footer {
                 color: white;
             }
 
-            &__icons{
+            &__icons {
                 padding-left: 2.5rem;
                 .redes {
                     width: 50px;
@@ -29,41 +33,41 @@ footer {
                     float: left;
                     transition: all 0.5s;
                 }
-                 #facebook {
+
+                #facebook {
                     animation: icon1 4s ease-in-out infinite;
                     animation-delay: 1s;
                 }
-                
-                 #facebook:hover {
-                    fill: #0E8AF0;
-                    cursor: pointer;
+
+                #facebook:hover {
+                    @include styleIcon(#0E8AF0);
                 }
-                
-                 #instagram {
+
+                #instagram {
                     animation: icon2 4s ease-in-out infinite;
                     animation-delay: 2s;
                 }
-                
-                 #instagram:hover {
-                    fill: #CD2E96;
-                    cursor: pointer;
+
+                #instagram:hover {
+                    @include styleIcon(#CD2E96);
                 }
-                
-                 #twitter {
+
+                #twitter {
                     animation: icon3 4s ease-in-out infinite;
                     animation-delay: 2.2s;
                 }
-                
-                 #twitter:hover {
-                    fill: #1D9BF0;
-                    cursor: pointer;
+
+                #twitter:hover {
+                    @include styleIcon(#1D9BF0)
                 }
             }
+
             #instagram {
                 padding-top: 0.8rem;
             }
         }
     }
+
     .credits {
         clear: both;
         text-align: center;

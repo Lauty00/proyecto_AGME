@@ -1,5 +1,10 @@
 /* media queries */
-@media (max-width:1024px) {
+$medias:(
+    "laptop":1024px,
+    "tablet":768px,
+    "mobile":480px
+);
+@media (max-width:map-get($medias,"laptop")) {
 
     /* global */
     #header-logo {
@@ -26,7 +31,7 @@
     /* -- */
 }
 
-@media (max-width:768px) {
+@media (max-width:map-get($medias,"tablet")) {
 
     /*global*/
     header {
@@ -69,7 +74,7 @@
 
 }
 
-@media (max-width:425px) {
+@media (max-width:map-get($medias,"mobile")) {
 
     /*global*/
     header {
