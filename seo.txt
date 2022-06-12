@@ -1,0 +1,22 @@
+keywords:
+paginas
+inicio - PISCINA,AGME,MANTENIMIENTO PARA PISCINAS,MANTENIMIENTO,PILETA,AGUA,FILTRAR,BOMBAS,FILTROS
+contacto - CONTACTO,CONSULTA,MAIL,PISCINA,PRESUPUESTO PARA PISCINA,PRESUPUESTO
+mantenimiento - MANTENIMENTO,CLORO,AGUA,ACIDO,FILTRAR,PILETA,PISCINA,AGUA TURBIA
+nosotros - EMPRESA,PILETA,PISCINA,META,AGME,PRODUCTOS,CONSTRUCCION
+productos - CLORO,PILETA,PISCINA,PH,ILUMINACION,LUCES,ROBOTS,BARREFONDOS,FILTROS,BOMBAS,PRODUCTOS DE MANTENIMIENTO,ACCESORIOS DE PILETA,CLARIFICADOR ,ALGUICIDA
+
+descriptions:
+paginas
+inicio - Ventas de productos de mantenimento para piscinas,iluminacion y accesorios para todo tipo de instalaciones.
+contacto -Mandanos tu presupuesto o cualquier consulta te respondemos dentro de las 24 horas.
+mantenimiento - Te guiamos desde Agme natatorios para que hagas un mantenimiento adecuado para tu piscina
+nosotros - Somos una empresa con una trayectoria de 10 años , con la mejor mercaderia de calidad para ofrecerte
+productos - productos de mantenimiento para piscinas , accesorios para piscinas , robots limpiafondos
+
+imagenes:
+solo optimize la imagen del fondo del maps de inicio por q pesaba 31MB
+
+
+sass
+utilize mixin y extends en "inicio" - map ,mixin y each en "footer" - extend en "nosotros"

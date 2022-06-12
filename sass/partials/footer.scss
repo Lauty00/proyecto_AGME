@@ -1,8 +1,15 @@
 /* INICIO FOOTER */
+$icons: (
+    "facebook":#0E8AF0,
+    "instagram":#CD2E96,
+    "twitter":#1D9BF0
+);
+
 @mixin styleIcon($color) {
     color: $color;
     cursor: pointer;
 }
+
 footer {
     padding-top: 1rem;
     border-top: 2px solid #187795;
@@ -27,6 +34,7 @@ footer {
 
             &__icons {
                 padding-left: 2.5rem;
+
                 .redes {
                     width: 50px;
                     padding: 1rem 1rem 0 1rem;
@@ -39,29 +47,28 @@ footer {
                     animation-delay: 1s;
                 }
 
-                #facebook:hover {
-                    @include styleIcon(#0E8AF0);
-                }
 
                 #instagram {
                     animation: icon2 4s ease-in-out infinite;
                     animation-delay: 2s;
                 }
 
-                #instagram:hover {
-                    @include styleIcon(#CD2E96);
-                }
+
 
                 #twitter {
                     animation: icon3 4s ease-in-out infinite;
                     animation-delay: 2.2s;
                 }
-
-                #twitter:hover {
-                    @include styleIcon(#1D9BF0)
+                @each $bg,
+                $value in $icons {
+                    ##{$bg}:hover {
+                        animation: none;
+                        fill: #{$value};
+                        transform: scale(1.1);
+                        cursor: pointer;
+                    }
                 }
             }
-
             #instagram {
                 padding-top: 0.8rem;
             }
