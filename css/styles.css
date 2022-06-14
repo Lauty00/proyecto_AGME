@@ -352,7 +352,6 @@ aside {
 
 #companySection-2 {
   padding-bottom: 5rem;
-  background: #0b0979;
   background: linear-gradient(90deg, #0b0979 0%, #0745a1 84%, #0569b8 100%); }
   #companySection-2 .securities-h2 {
     text-align: center;
@@ -381,15 +380,10 @@ aside {
     width: 85%;
     margin: auto; }
 
-.carousel {
+.carousel, .carousel .carousel-inner, .carousel .carousel-inner .carousel-item, .carousel .carousel-inner .carousel-item img {
   height: 65vh; }
-  .carousel .carousel-inner {
-    height: inherit; }
-    .carousel .carousel-inner .carousel-item {
-      height: inherit;
-      object-fit: cover; }
-      .carousel .carousel-inner .carousel-item img {
-        height: inherit; }
+  .carousel .carousel-inner .carousel-item, .carousel .carousel-inner .carousel-item img .carousel-inner .carousel-item {
+    object-fit: cover; }
 
 /* --- */
 /*  PRODUCTO  */
@@ -460,20 +454,26 @@ footer {
         footer #footer-flex .networks__icons #facebook {
           animation: icon1 4s ease-in-out infinite;
           animation-delay: 1s; }
-        footer #footer-flex .networks__icons #facebook:hover {
-          fill: #0E8AF0;
-          cursor: pointer; }
         footer #footer-flex .networks__icons #instagram {
           animation: icon2 4s ease-in-out infinite;
           animation-delay: 2s; }
-        footer #footer-flex .networks__icons #instagram:hover {
-          fill: #CD2E96;
-          cursor: pointer; }
         footer #footer-flex .networks__icons #twitter {
           animation: icon3 4s ease-in-out infinite;
           animation-delay: 2.2s; }
+        footer #footer-flex .networks__icons #facebook:hover {
+          animation: none;
+          fill: #0E8AF0;
+          transform: scale(1.1);
+          cursor: pointer; }
+        footer #footer-flex .networks__icons #instagram:hover {
+          animation: none;
+          fill: #CD2E96;
+          transform: scale(1.1);
+          cursor: pointer; }
         footer #footer-flex .networks__icons #twitter:hover {
+          animation: none;
           fill: #1D9BF0;
+          transform: scale(1.1);
           cursor: pointer; }
       footer #footer-flex .networks #instagram {
         padding-top: 0.8rem; }
@@ -523,24 +523,6 @@ footer {
   100% {
     opacity: 1; } }
 
-@keyframes animateText {
-  0% {
-    transform: scale(1); }
-  10% {
-    transform: scale(1); }
-  25% {
-    transform: scale(0.6); }
-  50% {
-    transform: translate(150%, 0%); }
-  60% {
-    transform: scale(3); }
-  75% {
-    transform: scale(3);
-    transform: translate(-150%, 0%); }
-  100% {
-    transform: translate(0%, 0%);
-    transform: scale(1); } }
-
 /* media queries */
 @media (max-width: 1024px) {
   /* global */
@@ -575,7 +557,7 @@ footer {
     width: 100%; }
   /* -- */ }
 
-@media (max-width: 425px) {
+@media (max-width: 480px) {
   /*global*/
   header nav .nav-label {
     display: block; }

@@ -1,4 +1,15 @@
 /* INICIO FOOTER */
+$icons: (
+    "facebook":#0E8AF0,
+    "instagram":#CD2E96,
+    "twitter":#1D9BF0
+);
+
+@mixin styleIcon($color) {
+    color: $color;
+    cursor: pointer;
+}
+
 footer {
     padding-top: 1rem;
     border-top: 2px solid #187795;
@@ -10,7 +21,7 @@ footer {
         padding-top: 1rem;
         padding-bottom: 1rem;
 
-        .networks{
+        .networks {
             text-align: center;
             box-sizing: border-box;
             margin-top: 0px;
@@ -21,42 +32,41 @@ footer {
                 color: white;
             }
 
-            &__icons{
+            &__icons {
                 padding-left: 2.5rem;
+
                 .redes {
                     width: 50px;
                     padding: 1rem 1rem 0 1rem;
                     float: left;
                     transition: all 0.5s;
                 }
-                 #facebook {
+
+                #facebook {
                     animation: icon1 4s ease-in-out infinite;
                     animation-delay: 1s;
                 }
-                
-                 #facebook:hover {
-                    fill: #0E8AF0;
-                    cursor: pointer;
-                }
-                
-                 #instagram {
+
+
+                #instagram {
                     animation: icon2 4s ease-in-out infinite;
                     animation-delay: 2s;
                 }
-                
-                 #instagram:hover {
-                    fill: #CD2E96;
-                    cursor: pointer;
-                }
-                
-                 #twitter {
+
+
+
+                #twitter {
                     animation: icon3 4s ease-in-out infinite;
                     animation-delay: 2.2s;
                 }
-                
-                 #twitter:hover {
-                    fill: #1D9BF0;
-                    cursor: pointer;
+                @each $bg,
+                $value in $icons {
+                    ##{$bg}:hover {
+                        animation: none;
+                        fill: #{$value};
+                        transform: scale(1.1);
+                        cursor: pointer;
+                    }
                 }
             }
             #instagram {
@@ -64,6 +74,7 @@ footer {
             }
         }
     }
+
     .credits {
         clear: both;
         text-align: center;
