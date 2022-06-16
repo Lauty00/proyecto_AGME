@@ -1,19 +1,40 @@
 /* NOSOTROS */
-#companySection-1{
+.companySection-1{
+    padding-top: 4rem;
     h2 {
         padding-bottom: 1.5rem;
         padding-top: 5rem;
     }
     p {
         line-height: 30px;
-        font-weight: 600;
         word-spacing: 5px;
+    }
+}
+
+.companySection-2{
+    padding: 2rem 0 2rem 0;
+    &__h2{
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    &__article{
+        margin-top: 2rem;
+        &__box-articles{
+            margin: 2rem 0 2rem 0;
+            h3{
+                margin: .5rem 0 .5rem 0;
+            }
+            p{
+                line-height: 30px;
+            }
+        }
+        
     }
 }
 
 
 
-#companySection-2 {
+.companySection-3 {
     padding-bottom: 5rem;
     background: linear-gradient(90deg, rgba(11,9,121,1) 0%, rgba(7,69,161,1) 84%, rgba(5,105,184,1) 100%);
     .securities-h2 {

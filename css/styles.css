@@ -21,7 +21,9 @@ h1 {
   border-bottom: 2px solid #187795; }
 
 h2 {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  color: #187795;
+  font-weight: bolder; }
 
 h3 {
   font-size: 2em; }
@@ -231,8 +233,8 @@ header {
 aside {
   background-image: url(../img/aside.jpg);
   background-size: cover;
-  background-position-x: center;
-  background-position-y: 60%;
+  background-position-x: 70%;
+  background-position-y: center;
   text-align: center;
   background-attachment: fixed; }
   aside .ubication {
@@ -264,8 +266,7 @@ aside {
 #contactSection-1 {
   padding-top: 4rem; }
   #contactSection-1 .contain-form {
-    text-align: center;
-    padding-bottom: 3rem; }
+    text-align: center; }
     #contactSection-1 .contain-form__h2 {
       padding: 2rem 0 2rem 0;
       border-bottom: 1px solid #8ec5d6;
@@ -275,7 +276,8 @@ aside {
       box-shadow: 0px 0px 5px 0px #8ec5d6;
       width: 60%;
       margin: 0 auto;
-      margin-top: 4rem; }
+      margin-top: 4rem;
+      margin-bottom: 4rem; }
       #contactSection-1 .contain-form #content-form .form__input {
         padding: 0.5rem;
         outline: none; }
@@ -341,37 +343,51 @@ aside {
 
 /* --- */
 /* NOSOTROS */
-#companySection-1 h2 {
-  padding-bottom: 1.5rem;
-  padding-top: 5rem; }
+.companySection-1 {
+  padding-top: 4rem; }
+  .companySection-1 h2 {
+    padding-bottom: 1.5rem;
+    padding-top: 5rem; }
+  .companySection-1 p {
+    line-height: 30px;
+    word-spacing: 5px; }
 
-#companySection-1 p {
-  line-height: 30px;
-  font-weight: 600;
-  word-spacing: 5px; }
+.companySection-2 {
+  padding: 2rem 0 2rem 0; }
+  .companySection-2__h2 {
+    margin-bottom: 2rem;
+    margin-top: 2rem; }
+  .companySection-2__article {
+    margin-top: 2rem; }
+    .companySection-2__article__box-articles {
+      margin: 2rem 0 2rem 0; }
+      .companySection-2__article__box-articles h3 {
+        margin: .5rem 0 .5rem 0; }
+      .companySection-2__article__box-articles p {
+        line-height: 30px; }
 
-#companySection-2 {
+.companySection-3 {
   padding-bottom: 5rem;
   background: linear-gradient(90deg, #0b0979 0%, #0745a1 84%, #0569b8 100%); }
-  #companySection-2 .securities-h2 {
+  .companySection-3 .securities-h2 {
     text-align: center;
     padding-bottom: 5rem;
     padding-top: 5rem;
     font-size: 4em;
     color: white; }
-  #companySection-2 .securities-card__h3 {
+  .companySection-3 .securities-card__h3 {
     text-align: center;
     padding-bottom: 3rem;
     color: white; }
-  #companySection-2 .securities-card__icon {
+  .companySection-3 .securities-card__icon {
     width: 70px;
     color: white;
     margin: auto;
     text-align: center;
     padding: 2rem 0 2rem 0; }
-  #companySection-2 .securities-card__icon > svg:hover {
+  .companySection-3 .securities-card__icon > svg:hover {
     color: #cbe6f5; }
-  #companySection-2 .securities-card__text {
+  .companySection-3 .securities-card__text {
     color: white;
     text-align: center;
     line-height: 30px;
@@ -598,6 +614,10 @@ footer {
       #companySection-2 .securities-cards .securities-card__text {
         text-align: left; }
   /* -- */
+  /* contacto */
+  #contactSection-1 .contain-form #content-form {
+    width: 100%; }
+  /* */
   /* producto */
   #contain-products .products__card__imgs {
     display: grid;

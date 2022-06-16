@@ -6,7 +6,6 @@
     padding-top: 4rem;
     .contain-form {
         text-align: center;
-        padding-bottom: 3rem;
         &__h2 {
             padding: 2rem 0 2rem 0;
             border-bottom: 1px solid #8ec5d6;
@@ -18,6 +17,7 @@
             width: 60%;
             margin: 0 auto;
             margin-top: 4rem;
+            margin-bottom: 4rem;
             .form{
                 &__input {
                     padding: 0.5rem;
