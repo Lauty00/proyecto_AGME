@@ -463,36 +463,33 @@ footer {
       footer #footer-flex .networks__icons {
         padding-left: 2.5rem; }
         footer #footer-flex .networks__icons .redes {
-          width: 50px;
+          width: 55px;
           padding: 1rem 1rem 0 1rem;
           float: left;
           transition: all 0.5s; }
+          footer #footer-flex .networks__icons .redes img {
+            width: 100%; }
         footer #footer-flex .networks__icons #facebook {
           animation: icon1 4s ease-in-out infinite;
           animation-delay: 1s; }
         footer #footer-flex .networks__icons #instagram {
           animation: icon2 4s ease-in-out infinite;
           animation-delay: 2s; }
-        footer #footer-flex .networks__icons #twitter {
+        footer #footer-flex .networks__icons #whatssap {
           animation: icon3 4s ease-in-out infinite;
           animation-delay: 2.2s; }
         footer #footer-flex .networks__icons #facebook:hover {
           animation: none;
-          fill: #0E8AF0;
           transform: scale(1.1);
           cursor: pointer; }
         footer #footer-flex .networks__icons #instagram:hover {
           animation: none;
-          fill: #CD2E96;
           transform: scale(1.1);
           cursor: pointer; }
-        footer #footer-flex .networks__icons #twitter:hover {
+        footer #footer-flex .networks__icons #whatssap:hover {
           animation: none;
-          fill: #1D9BF0;
           transform: scale(1.1);
           cursor: pointer; }
-      footer #footer-flex .networks #instagram {
-        padding-top: 0.8rem; }
   footer .credits {
     clear: both;
     text-align: center;
@@ -508,7 +505,6 @@ footer {
     transform: scale(1); }
   50% {
     transform: scale(1.1);
-    fill: #0E8AF0;
     cursor: pointer; }
   100% {
     transform: scale(1); } }
@@ -518,7 +514,6 @@ footer {
     transform: scale(1); }
   50% {
     transform: scale(1.1);
-    fill: #CD2E96;
     cursor: pointer; }
   100% {
     transform: scale(1); } }
@@ -528,7 +523,6 @@ footer {
     transform: scale(1); }
   50% {
     transform: scale(1.1);
-    fill: #1D9BF0;
     cursor: pointer; }
   100% {
     transform: scale(1); } }
