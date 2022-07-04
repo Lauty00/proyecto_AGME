@@ -11,12 +11,12 @@
   /* FONTS */
   @font-face {
     font-family: "subtitle";
-    src: url("../fonts/Poppins.ttf");
+    src: url("../fonts/Poppins-SemiBold.ttf");
   }
   
   @font-face {
     font-family: "font-all";
-    src: url("../fonts/OpenSans-Light.ttf");
+    src: url("../fonts/OpenSans-Regular.ttf");
   }
   
   h1 {
@@ -27,8 +27,6 @@
   
   h2 {
     font-size: 2.5em;
-    color: #187795;
-    font-weight: bolder;
   }
   
   h3 {

@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel=icon href="../img/logo.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="CONTACTO,CONSULTA,MAIL,PISCINA,PRESUPUESTO PARA PISCINA,PRESUPUESTO">
     <meta name="description"
         content="Mandanos tu presupuesto o cualquier consulta te respondemos dentro de las 24 horas.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>AGME | Contacto</title>
@@ -18,7 +21,7 @@
     <header>
         <div class="container header--padding">
             <div id="header-logo">
-                <img class="logo" src="../img/logo.png" alt="logo">
+                <img class="logo animate__animated animate__bounce" src="../img/logo.png" alt="logo">
                 <p class="header-logo__text">
                     ACCESORIOS PARA PISCINAS, HIDROMASAJES Y TRATAMIENTO DE AGUA
                 </p>
@@ -27,7 +30,12 @@
 
         <nav>
             <input class="nav-checkbox" type="checkbox" id="btn">
-            <label class="nav-label border-bottom " for="btn">MENU</label>
+            <label class="nav-label " for="btn">MENU<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+            </svg></label>
             <ul class="listNav mb-0 p-0">
                 <li class="listNav__item ">
                     <a href="../index.html">Inicio</a>
@@ -57,29 +65,32 @@
                 <h1 class="contain-form__h1">Contacto</h1>
                 <div id="content-form">
                     <h2 class="contain-form__h2 mb-0">Realize su consulta</h2>
-                    <form action="" class="form bg-white">
-                        <div class="box-ilustration w-50 mx-auto">
-                            <img class="w-100" src="../img/contactomail.png" alt="ilustrationContacto">
+                    <div class="form-flex">
+                        <div class="box-imgForm">
+                            <img src="../img/imgcontacto.jpg" alt="imagen-contacto">
                         </div>
-                        <div class="content-input d-flex flex-column w-50 mx-auto mb-3">
-                            <label class="form__label" for="name">Nombre y Apellido</label>
-                            <input class="form__input" type="text" name="name" required>
-                        </div>
-                        <div class="content-input d-flex flex-column w-50 mx-auto mb-3">
-                            <label class="form__label" for="email">email</label>
-                            <input class="form__input" type="email" name="email" required>
-                        </div>
-                        <div class="content-input d-flex flex-column w-50 mx-auto mb-3">
-                            <label class="form__label" for="asunto">Asunto</label>
-                            <input class="form__input" type="text" name="asunto" required>
-                        </div>
-                        <div class="content-input d-flex flex-column w-50 mx-auto mb-5">
-                            <label class="form__label" for="message">Mensaje</label>
-                            <textarea class="form__input form__textarea" name="message" id="" cols="30" rows="10"
-                                required></textarea>
-                        </div>
-                        <input class="form__submit mb-5" type="submit" value="enviar">
-                    </form>
+                        <form action="" class="form bg-white">
+                            <div class="content-input d-flex flex-column w-75 mx-auto mb-3">
+                                <label class="form__label" for="name">Nombre y Apellido</label>
+                                <input class="form__input" type="text" name="name" required>
+                            </div>
+                            <div class="content-input d-flex flex-column w-75 mx-auto mb-3">
+                                <label class="form__label" for="email">email</label>
+                                <input class="form__input" type="email" name="email" required>
+                            </div>
+                            <div class="content-input d-flex flex-column w-75 mx-auto mb-3">
+                                <label class="form__label" for="asunto">Asunto</label>
+                                <input class="form__input" type="text" name="asunto" required>
+                            </div>
+                            <div class="content-input d-flex flex-column w-75 mx-auto mb-5">
+                                <label class="form__label" for="message">Mensaje</label>
+                                <textarea class="form__input form__textarea" name="message" id="" cols="30" rows="10"
+                                    required></textarea>
+                            </div>
+                            <input class="form__submit" type="submit" value="enviar">
+                        </form>
+                    </div>
+                   
                 </div>
 
             </div>
@@ -94,7 +105,30 @@
             <div class="footer-logo ">
                 <img class="logo" src="../img/logo.png" alt="LOGO">
             </div>
-            
+            <div class="content-footer">
+                <ul class="submenu">
+                    <li class="submenu__item">
+                        <img src="../img/email.png" alt="">
+                        agmenatatorios@outlook.com
+                    </li>
+                    <li class="submenu__item">
+                        <img src="../img/smartphone-call.png" alt="">
+                        5491134620940
+                    </li>
+                    <li class="submenu__item">
+                        <img src="../img/call.png" alt="">
+                        0810 375 6829
+                    </li>
+                </ul>
+                <ul class="submenu">
+                    <li class="submenu__item-1"><a href="./nosotros.html">- La empresa</a></li>
+                    <li class="submenu__item-1"><a href="./contacto.html">- Consultas</a></li>
+                    <li class="submenu__item-1"><a href="./producto.html">- Productos</a></li>
+                    <li class="submenu__item-1"><a href="./mantenimiento.html">- Guia de mantenimiento</a></li>
+                </ul>
+            </div>
+
+
             <div class="networks">
                 <h3 class="networks_h3">Siguenos en:</h3>
                 <div class="networks__icons">

@@ -2,17 +2,30 @@
 .companySection-1{
     padding-top: 4rem;
     h2 {
-        padding-bottom: 1.5rem;
-        padding-top: 5rem;
+        margin-bottom: 1.5rem;
+        margin-top: 5rem;
     }
     p {
         line-height: 30px;
         word-spacing: 5px;
     }
+    .carousel{
+        height: 65vh;
+        .carousel-inner{
+            @extend .carousel;
+            .carousel-item{
+                @extend .carousel;
+                object-fit: cover;
+                img{
+                    @extend .carousel;
+                }
+            }
+        }
+    }
 }
 
 .companySection-2{
-    padding: 2rem 0 2rem 0;
+
     &__h2{
         margin-bottom: 2rem;
         margin-top: 2rem;
@@ -66,7 +79,6 @@
             color: white;
             text-align: center;
             line-height: 30px;
-            font-weight: 600;
             word-spacing: 5px;
             width: 85%;
             margin: auto;
@@ -77,19 +89,7 @@
 
 
 
-.carousel{
-    height: 65vh;
-    .carousel-inner{
-        @extend .carousel;
-        .carousel-item{
-            @extend .carousel;
-            object-fit: cover;
-            img{
-                @extend .carousel;
-            }
-        }
-    }
-}
+
 
 
 /* --- */

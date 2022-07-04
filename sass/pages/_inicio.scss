@@ -54,6 +54,18 @@
         &__text--white {
             color: white;
         }
+        .btn-a{
+            a{
+                .gota{
+                    width: 20px;
+                    transition: all 0.5s;
+                }
+            }
+            a:hover .gota{
+                transform: translate(0px,5px);
+            }
+        }
+        
     }
 }
 
@@ -116,6 +128,17 @@
             }
         }
     }   
+    .btn-a{
+        a{
+            .gota{
+                width: 20px;
+                transition: all 0.5s;
+            }
+        }
+        a:hover .gota{
+            transform: translate(0px,5px);
+        }
+    }
 }
 
 #btn-targets {
@@ -151,7 +174,6 @@ aside {
         &__text {
             font-size: 2.5em;
             margin-top: 2.5rem;
-            font-weight: bold;
         }
 
         iframe {

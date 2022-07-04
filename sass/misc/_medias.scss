@@ -1,10 +1,11 @@
 /* media queries */
-$medias:(
+$medias: (
     "laptop":1024px,
     "tablet":768px,
     "mobile":480px
 );
-@media (max-width:map-get($medias,"laptop")) {
+
+@media (max-width:map-get($medias, "laptop")) {
 
     /* global */
     #header-logo {
@@ -31,7 +32,7 @@ $medias:(
     /* -- */
 }
 
-@media (max-width:map-get($medias,"tablet")) {
+@media (max-width:map-get($medias, "tablet")) {
 
     /*global*/
     header {
@@ -45,9 +46,59 @@ $medias:(
         }
     }
 
+    footer {
+        font-size: 8px;
+
+        .footer-logo {
+            align-self: center;
+            margin: 1rem 0 2rem 0;
+
+            .logo {
+                margin: 0;
+            }
+        }
+
+        #footer-flex {
+            flex-direction: column;
+
+            .content-footer {
+                gap: 0;
+                margin-bottom: 2rem;
+
+                .submenu {
+                    flex-basis: 50%;
+                    padding: 0;
+                    margin: 0;
+                }
+
+            }
+
+            .networks {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    }
+
     /* -- */
 
     /* inicio */
+    #section-1 {
+        .containSub-1 {
+            #backdrop {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+
+        .containSub-2 {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
     #contain-targets {
         flex-direction: column;
         row-gap: 6rem;
@@ -60,6 +111,26 @@ $medias:(
     }
 
     /* -- */
+
+    /* contacto */
+    #contactSection-1 {
+        padding-top: 4rem;
+
+        .contain-form {
+            #content-form {
+                width: 100%;
+
+                .form__flex {
+                    .form {
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* -- */
+
     /* mantenimiento */
     #maintenanceSection-1 {
         .content-video {
@@ -72,9 +143,16 @@ $medias:(
 
     /* -- */
 
+    /* nosotros */
+    .companySection-1{
+        .carousel{
+            height:40vh;
+        }
+    }
+    /* -- */
 }
 
-@media (max-width:map-get($medias,"mobile")) {
+@media (max-width:map-get($medias, "mobile")) {
 
     /*global*/
     header {
@@ -82,16 +160,17 @@ $medias:(
             .nav-label {
                 display: block;
             }
-
-            .nav-checkbox:checked~.listNav {
-                display: flex;
-            }
-
             .listNav {
                 position: absolute;
                 flex-direction: column;
                 display: none;
                 z-index: 1;
+
+            }
+            .nav-checkbox:checked~.listNav {
+
+                display: flex;
+
             }
         }
     }
@@ -106,6 +185,24 @@ $medias:(
 
         .logo {
             margin: 0;
+        }
+    }
+
+    footer {
+        #footer-flex {
+            .footer-logo{
+                display: none;
+            }
+            .content-footer {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 1rem;
+                gap: 2rem;
+                .submenu:nth-of-type(1){
+                    order: 1;
+                }
+            }
         }
     }
 
@@ -146,6 +243,11 @@ $medias:(
 
     /* -- */
     /* nosotros */
+    .companySection-1{
+        .carousel{
+            height: 30vh;
+        }
+    }
     #companySection-2 {
         .securities-cards {
             flex-direction: column;
@@ -170,9 +272,23 @@ $medias:(
         .contain-form {
             #content-form {
                 width: 100%;
+                .form-flex{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    padding-bottom: 1rem;
+                    .box-imgForm{
+                        min-height: 310px;
+                        flex-basis: 0;
+                    }
+                    .form{
+                        width: 100%;
+                    }
+                }
             }
         }
     }
+
     /* */
 
     /* producto */

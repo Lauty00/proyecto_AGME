@@ -15,6 +15,37 @@
 footer {
     padding-top: 1rem;
     border-top: 2px solid #187795;
+    .content-footer{
+        display: flex;
+        flex-direction: row;
+        gap: 6rem;
+        .submenu{
+            list-style-type: none;
+            &__item{
+                font-size: 1.5em;
+                line-height: 20px;
+                margin-bottom: 1rem;
+                img{
+                    width: 20px;
+                    transition: all 1s;
+                }
+            }
+            &__item:hover img{
+                transform: rotate(360deg);
+            }
+            &__item-1{
+                font-size: 1em;
+                a{
+                    text-decoration: none;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+                a:hover{
+                    color:#187795 ;
+                }
+            }
+        }
+    }
+    
 
     #footer-flex {
         display: flex;

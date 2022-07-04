@@ -28,7 +28,6 @@
                 flex-basis: 90%;
             }
             p {
-                font-weight: 600;
                 background-color: #8ec5d6;
                 box-sizing: border-box;
                 padding-top: 1rem;
@@ -44,6 +43,8 @@
         }
         .box-img:hover {
             border: 2px solid rgb(54, 152, 209);
+            transform: scale(1.1);
+            border-radius: 5px;
         }
     }
 }

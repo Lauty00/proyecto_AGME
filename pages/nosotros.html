@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel=icon href="../img/logo.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="EMPRESA,META,AGME,PRODUCTOS,CONSTRUCCION">
     <meta name="description"
         content="Somos una empresa con una trayectoria de 10 años , con la mejor mercaderia de calidad para ofrecerte">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>AGME | Nosotros</title>
@@ -19,7 +21,7 @@
     <header>
         <div class="container header--padding">
             <div id="header-logo">
-                <img class="logo" src="../img/logo.png" alt="logo">
+                <img class="logo animate__animated animate__bounce" src="../img/logo.png" alt="logo">
                 <p class="header-logo__text">
                     ACCESORIOS PARA PISCINAS, HIDROMASAJES Y TRATAMIENTO DE AGUA
                 </p>
@@ -28,7 +30,12 @@
 
         <nav>
             <input class="nav-checkbox" type="checkbox" id="btn">
-            <label class="nav-label border-bottom " for="btn">MENU</label>
+            <label class="nav-label " for="btn">MENU<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+            </svg></label>
             <ul class="listNav mb-0 p-0">
                 <li class="listNav__item">
                     <a href="../index.html">Inicio</a>
@@ -66,7 +73,7 @@
                     una confianza que nos permita obtener una mayor valoracion a nivel nacional y mundial.
                 </p>
             </div>
-            <div id="carouselExampleFade" class="carousel slide carousel-fade vh-50" data-bs-ride="carousel">
+            <div id="carouselExampleFade" class="container carousel slide carousel-fade vh-50" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="../img/carousel1.jpg" class="d-block w-100" alt="...">
@@ -193,7 +200,30 @@
             <div class="footer-logo ">
                 <img class="logo" src="../img/logo.png" alt="LOGO">
             </div>
-            
+            <div class="content-footer">
+                <ul class="submenu">
+                    <li class="submenu__item">
+                        <img src="../img/email.png" alt="">
+                        agmenatatorios@outlook.com
+                    </li>
+                    <li class="submenu__item">
+                        <img src="../img/smartphone-call.png" alt="">
+                        5491134620940
+                    </li>
+                    <li class="submenu__item">
+                        <img src="../img/call.png" alt="">
+                        0810 375 6829
+                    </li>
+                </ul>
+                <ul class="submenu">
+                    <li class="submenu__item-1"><a href="./nosotros.html">- La empresa</a></li>
+                    <li class="submenu__item-1"><a href="./contacto.html">- Consultas</a></li>
+                    <li class="submenu__item-1"><a href="./producto.html">- Productos</a></li>
+                    <li class="submenu__item-1"><a href="./mantenimiento.html">- Guia de mantenimiento</a></li>
+                </ul>
+            </div>
+
+
             <div class="networks">
                 <h3 class="networks_h3">Siguenos en:</h3>
                 <div class="networks__icons">

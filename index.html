@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=icon href="img/logo.png" type="image/png">
     <meta name="keywords"
         content="PISCINA,AGME,MANTENIMIENTO PARA PISCINAS,MANTENIMIENTO,PILETA,AGUA,FILTRAR,BOMBAS,FILTROS">
     <meta name="description"
         content="Ventas de productos de mantenimento para piscinas,iluminacion y accesorios para todo tipo de instalaciones.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>AGME | Inicio</title>
 </head>
 
@@ -21,7 +22,7 @@
     <header>
         <div class="container header--padding">
             <div id="header-logo">
-                <img class="logo" src="./img/logo.png" alt="LOGO">
+                <img class="logo animate__animated animate__bounce" src="./img/logo.png" alt="LOGO">
                 <p class="header-logo__text">
                     ACCESORIOS PARA PISCINAS, HIDROMASAJES Y TRATAMIENTO DE AGUA
                 </p>
@@ -29,7 +30,12 @@
         </div>
         <nav>
             <input class="nav-checkbox" type="checkbox" id="btn">
-            <label class="nav-label " for="btn">MENU</label>
+            <label class="nav-label " for="btn">MENU<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                    viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg></label>
             <ul class="listNav mb-0 p-0">
                 <li class="listNav__item">
                     <a href="index.html">Inicio</a>
@@ -70,7 +76,7 @@
 
 
             <div class="containSub-2">
-                <div class="">
+                <div>
                     <h2 class="containSub-2__h2">ANALIZA DESINFECTA Y MANTENE</h2>
                     <p class="containSub-2__text containSub-2__text--white">SABÍAS QUE MANTENIENDO EL AGUA SANA Y LIMPIA
                         TODO EL AÑO
@@ -78,7 +84,11 @@
                     </p>
                     <p class="containSub-2__text containSub-2__text--bold">¡NO TIRES EL AGUA, NO TIRES TU PLATA!</p>
                     <span class="btn-a">
-                        <a href="./pages/mantenimiento.html">Ver Mas</a>
+                        <a href="./pages/mantenimiento.html">
+                            <img src="./img/agua.png" class="gota" alt="gota">
+                            Ver Mas
+                            <img src="./img/agua.png" class="gota" alt="gota">
+                        </a>
                     </span>
                 </div>
 
@@ -129,7 +139,11 @@
                 </div>
             </div>
             <span class="btn-a mt-5" id="btn-targets">
-                <a href="./pages/producto.html"> Ver Productos</a>
+                <a href="./pages/producto.html"> 
+                    <img src="./img/agua.png" class="gota" alt="gota">
+                    Ver Productos
+                    <img src="./img/agua.png" class="gota" alt="gota">
+                </a>
             </span>
 
         </section>
@@ -163,6 +177,29 @@
             <div class="footer-logo ">
                 <img class="logo" src="./img/logo.png" alt="LOGO">
             </div>
+            <div class="content-footer">
+                <ul class="submenu">
+                    <li class="submenu__item">
+                        <img src="./img/email.png" alt="">
+                        agmenatatorios@outlook.com
+                    </li>
+                    <li class="submenu__item">
+                        <img src="./img/smartphone-call.png" alt="">
+                        5491134620940
+                    </li>
+                    <li class="submenu__item">
+                        <img src="./img/call.png" alt="">
+                        0810 375 6829
+                    </li>
+                </ul>
+                <ul class="submenu">
+                    <li class="submenu__item-1"><a href="./pages/nosotros.html">- La empresa</a></li>
+                    <li class="submenu__item-1"><a href="./pages/contacto.html">- Consultas</a></li>
+                    <li class="submenu__item-1"><a href="./pages/producto.html">- Productos</a></li>
+                    <li class="submenu__item-1"><a href="./pages/mantenimiento.html">- Guia de mantenimiento</a></li>
+                </ul>
+            </div>
+
 
             <div class="networks">
                 <h3 class="networks_h3">Siguenos en:</h3>
@@ -186,7 +223,7 @@
     <!-- Fin del Footer -->
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

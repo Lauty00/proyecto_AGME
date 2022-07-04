@@ -14,9 +14,11 @@ header {
             padding-bottom: 1rem;
             cursor: pointer;
             font-size: 1.8em;
+            svg{
+                width: 15px;
+            }
         }
         .nav-checkbox {
-            width: 100%;
             display: none;
         }
         .listNav {
